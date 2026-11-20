@@ -1,81 +1,39 @@
 import {
-  BoxIcon,
-  CalendarIcon,
+  BrainIcon,
+  DollarIcon,
+  GlobeIcon,
   LayoutGridIcon,
-  ListIcon,
-  PageIcon,
-  PieChartIcon,
-  PluginIcon,
-  TableIcon,
-  UserCircleIcon,
+  SparkIcon,
 } from "@/icons";
 import type { NavItem } from "./types";
 
 export const navItems: NavItem[] = [
   {
-    icon: <LayoutGridIcon className="size-6" />,
-    key: "dashboard",
-    subItems: [{ key: "ecommerceHome", path: "/" }],
+    icon: <LayoutGridIcon className="size-5" aria-hidden="true" />,
+    key: "today",
+    path: "/",
   },
   {
-    icon: <CalendarIcon className="size-6" />,
-    key: "calendar",
-    path: "/calendar",
+    icon: <DollarIcon className="size-5" aria-hidden="true" />,
+    key: "finance",
+    path: "/finance",
   },
   {
-    icon: <UserCircleIcon className="size-6" />,
-    key: "userProfile",
-    path: "/profile",
+    icon: <GlobeIcon className="size-5" aria-hidden="true" />,
+    key: "travel",
+    path: "/travel",
   },
   {
-    key: "forms",
-    icon: <ListIcon className="size-6" />,
-    subItems: [{ key: "formElements", path: "/form-elements", pro: false }],
+    icon: <BrainIcon className="size-5" aria-hidden="true" />,
+    key: "learning",
+    path: "/learning",
   },
   {
-    key: "tables",
-    icon: <TableIcon className="size-6" />,
-    subItems: [{ key: "basicTables", path: "/basic-tables", pro: false }],
-  },
-  {
-    key: "pages",
-    icon: <PageIcon className="size-6" />,
-    subItems: [
-      { key: "blankPage", path: "/blank" },
-      { key: "error404", path: "/error-404" },
-    ],
+    icon: <SparkIcon className="size-5" aria-hidden="true" />,
+    key: "agents",
+    path: "/agents",
   },
 ];
 
-export const othersItems: NavItem[] = [
-  {
-    icon: <PieChartIcon className="size-6" />,
-    key: "charts",
-    subItems: [
-      { key: "lineChart", path: "/line-chart", pro: false },
-      { key: "barChart", path: "/bar-chart", pro: false },
-    ],
-  },
-  {
-    icon: <BoxIcon className="size-6" />,
-    key: "uiElements",
-    subItems: [
-      { key: "alerts", path: "/alerts" },
-      { key: "avatar", path: "/avatars" },
-      { key: "badge", path: "/badge" },
-      { key: "buttons", path: "/buttons" },
-      { key: "images", path: "/images" },
-      { key: "videos", path: "/videos" },
-    ],
-  },
-  {
-    icon: <PluginIcon className="size-6" />,
-    key: "authentication",
-    subItems: [
-      { key: "signIn", path: "/signin", pro: false },
-      { key: "signUp", path: "/signup", pro: false },
-    ],
-  },
-];
-
+export const othersItems: NavItem[] = [];
 export const supportItems: NavItem[] = [];
