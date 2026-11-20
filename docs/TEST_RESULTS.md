@@ -44,6 +44,10 @@ Screenshots are generated in ignored `test-results/`. The desktop light layout a
 
 Non-fatal warnings: npm reported three inherited install scripts not approved by its environment policy; build/runtime verification nevertheless passed. Node reports a module-type warning for the inherited ES-module `postcss.config.js` and for direct TypeScript fixture imports. These warnings do not fail checks; module mode was not changed across the inherited project.
 
+## GitHub publication
+
+Initial publication attempts failed: Git HTTPS push returned HTTP 403, and the connected GitHub app returned `Resource not accessible by integration` when creating the development branch. Repository metadata showed owner/admin access, but actual write operations were denied. The implementation is committed locally; publishing the branch and opening the PR require corrected GitHub connection access. A patch, source archive and Git bundle are supplied outside the checkout as fallback handoff artifacts. This is a provider-access failure, not a build/test failure.
+
 ## Limits
 
 WebKit device emulation validates the browser engine and responsive behavior; a physical iPhone was not available. Before release, check Safari on actual iOS hardware for browser chrome, keyboard, orientation and safe-area behavior. The supported MVP target is iOS 17+ Safari.
