@@ -22,3 +22,5 @@ All data is fictional, anchored to November 20, 2026. Briefs and agent outputs a
 Browser validation uses desktop Chromium and iPhone-profile WebKit. Physical iPhone verification remains a pre-release check. Nothing has been merged or deployed.
 
 Branch: `feat/personal-ai-os-v0.1`. Base: `main` in `s2ssxsvg5s-droid/free-nextjs-admin-dashboard`.
+
+Review PR: [#1 — Build Personal AI OS MVP v0.1 on TailAdmin Free](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1). Published on 2026-11-21 after GitHub app access was restored.

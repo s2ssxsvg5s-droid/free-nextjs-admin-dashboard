@@ -46,7 +46,7 @@ Non-fatal warnings: npm reported three inherited install scripts not approved by
 
 ## GitHub publication
 
-Initial publication attempts failed: Git HTTPS push returned HTTP 403, and the connected GitHub app returned `Resource not accessible by integration` when creating the development branch. Repository metadata showed owner/admin access, but actual write operations were denied. The implementation is committed locally; publishing the branch and opening the PR require corrected GitHub connection access. A patch, source archive and Git bundle are supplied outside the checkout as fallback handoff artifacts. This is a provider-access failure, not a build/test failure.
+Initial publication attempts returned HTTP 403 for Git HTTPS push and `Resource not accessible by integration` for connector branch creation. This provider-access issue was resolved on 2026-11-21 after the user installed the ChatGPT Codex Connector. The development branch `feat/personal-ai-os-v0.1` is published in the user’s fork and [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) is open for review. Nothing has been merged or deployed. The patch, source archive and Git bundle outside the checkout are optional handoff copies. These documentation updates do not change the previously tested application code.
 
 ## Limits
 

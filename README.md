@@ -127,4 +127,4 @@ The audited foundation is TailAdmin Free v2.5.2 at commit **`8075866c23d1841508e
 
 The original [MIT License](LICENSE), including **Copyright (c) 2023 TailAdmin**, is preserved unchanged. Keep this license and copyright/permission notices with copies or substantial portions of the code. Third-party dependencies retain their own licenses. Upstream documentation is available at <https://tailadmin.com/docs>.
 
-Development branch: `feat/personal-ai-os-v0.1`. Review destination: [your TailAdmin fork](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard). See [the PR summary](docs/PR_SUMMARY.md) for review scope and verification. Do not merge or deploy this work without approval.
+Development branch: `feat/personal-ai-os-v0.1`. Review: [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) in your TailAdmin fork. See [the PR summary](docs/PR_SUMMARY.md) for review scope and verification. Do not merge or deploy this work without approval.
