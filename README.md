@@ -2,6 +2,8 @@
 
 A mobile-first personal dashboard for Today, Finance, Travel, Learning, and AI Agents. Built with TypeScript, Next.js App Router, and Tailwind CSS on the actual [TailAdmin Free Next.js repository](https://github.com/TailAdmin/free-nextjs-admin-dashboard).
 
+[Open the private dashboard](https://personal-ai-os-v01-s2ssxsvg5s.plumpbat2.chatgpt.site). Sign in with the owner’s ChatGPT account if prompted. Deployed with user approval on 2026-11-21; [hosting source](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/tree/deploy/personal-ai-os-v0.1) contains the English-only static export adapter. GitHub records the review history in PR #1.
+
 **This is a mock workspace.** Every balance, transaction, itinerary, learning record, and agent result is fictional. The sample date is **November 20, 2026**. There are no account connections, financial credentials, API keys, trading operations, booking operations, or live AI calls. No environment variables are needed to run the app.
 
 ## Run locally
