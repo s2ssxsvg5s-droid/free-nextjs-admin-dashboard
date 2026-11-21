@@ -7,15 +7,17 @@ import { DirectionProvider } from "@base-ui/react/direction-provider";
 import "flatpickr/dist/flatpickr.css";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Outfit } from "next/font/google";
+import type { Viewport } from "next";
 import { notFound } from "next/navigation";
 import "simplebar-react/dist/simplebar.min.css";
 import "swiper/css/bundle";
 import "../globals.css";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-});
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -40,9 +42,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={rtl ? "rtl" : "ltr"}>
-      <body
-        className={cn("relative isolate dark:bg-gray-900", outfit.className)}
-      >
+      <body className={cn("relative isolate dark:bg-gray-900")}>
         <NextIntlClientProvider>
           <ThemeProvider>
             <DirectionProvider direction={rtl ? "rtl" : "ltr"}>

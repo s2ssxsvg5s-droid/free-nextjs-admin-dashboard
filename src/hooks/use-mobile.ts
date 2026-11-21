@@ -1,21 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 const MOBILE_BREAKPOINT = 1280; // xl breakpoint — matches TailAdmin sidebar's xl:translate-x-0
 
+const query = `(max-width: ${MOBILE_BREAKPOINT - 1}px)`;
+const subscribe = (callback: () => void) => {
+  const media = window.matchMedia(query);
+  media.addEventListener("change", callback);
+  return () => media.removeEventListener("change", callback);
+};
+const getSnapshot = () => window.matchMedia(query).matches;
+const getServerSnapshot = () => false;
+
 export function useIsMobile() {
-  const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
-
-  useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-    mql.addEventListener("change", onChange);
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    return () => mql.removeEventListener("change", onChange);
-  }, []);
-
-  return !!isMobile;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
