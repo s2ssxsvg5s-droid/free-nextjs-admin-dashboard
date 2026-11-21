@@ -1,4 +1,4 @@
-import { UsFlagIcon } from "@/icons";
+import { GlobeIcon, UsFlagIcon } from "@/icons";
 
 import type { Locale } from "./routing";
 
@@ -12,6 +12,13 @@ export interface Language {
 }
 
 export const languages: Language[] = [
+  {
+    id: "zh-TW",
+    name: "繁體中文",
+    shortName: "繁中",
+    dir: "ltr",
+    FlagIcon: GlobeIcon,
+  },
   {
     id: "en",
     name: "English",

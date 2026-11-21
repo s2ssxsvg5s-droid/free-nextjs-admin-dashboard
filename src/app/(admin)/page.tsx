@@ -1,14 +1,13 @@
 import TodayDashboard from "@/components/personal-os/today";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Today · Personal OS",
-  description:
-    "Your day, finances, travel, learning and local agent demos in one personal workspace.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: "zh-TW", namespace: "osMeta" });
+  return { title: t("todayTitle"), description: t("todayDescription") };
+}
 
 export default function TodayPage() {
-  setRequestLocale("en");
+  setRequestLocale("zh-TW");
   return <TodayDashboard />;
 }

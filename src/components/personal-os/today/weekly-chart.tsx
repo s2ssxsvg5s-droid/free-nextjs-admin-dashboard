@@ -39,7 +39,7 @@ export default function WeeklyChart() {
       min: 0,
       max: 60,
       tickAmount: 3,
-      labels: { formatter: (value) => `${value}m` },
+      labels: { formatter: (value) => t("shortMinutes", { count: value }) },
     },
     theme: { mode: theme },
     tooltip: { y: { formatter: (value) => t("minutes", { count: value }) } },

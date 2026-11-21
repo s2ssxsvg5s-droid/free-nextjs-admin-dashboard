@@ -886,7 +886,9 @@
     },
     "workspace": "Demo workspace",
     "workspaceDescription": "Explore with sample data. Your accounts stay yours — nothing is connected.",
-    "skipNavigation": "Skip to main content"
+    "skipNavigation": "Skip to main content",
+    "sidebarTitle": "Navigation",
+    "sidebarDescription": "Choose a dashboard section."
   },
   "osLearning": {
     "eyebrow": "A LITTLE, EVERY DAY",
@@ -1032,7 +1034,17 @@
       "connectionsTitle": "Account connections",
       "connectionsEmptyTitle": "Your demo stays local",
       "connectionsEmptyDescription": "This MVP uses mock accounts only. Account linking, credentials, and trading are outside v0.1.",
-      "chartData": "View chart data"
+      "chartData": "View chart data",
+      "merchants": {
+        "tx-1": "Riverside Apartments",
+        "tx-2": "Green Market",
+        "tx-3": "City Utilities",
+        "tx-4": "Neighborhood cafés",
+        "tx-5": "Metro Pass",
+        "tx-6": "Digital subscriptions",
+        "tx-7": "Lisbon Stay"
+      },
+      "axisAmount": "${count}k"
     },
     "travel": {
       "eyebrow": "A CHANGE OF SCENERY",
@@ -1089,7 +1101,9 @@
       "stayMock": "Sample plan only · no reservation has been made",
       "otherTripsTitle": "Later adventures",
       "emptyTitle": "The next chapter is open",
-      "emptyDescription": "No other trips in this demo. Future planning and booking integrations belong after v0.1."
+      "emptyDescription": "No other trips in this demo. Future planning and booking integrations belong after v0.1.",
+      "destination": "Lisbon",
+      "stayName": "Alfama Studio"
     }
   },
   "os": {
@@ -1171,6 +1185,19 @@
     "courseProgress": "{percent}% complete",
     "courseDuration": "15 min session",
     "continueLearning": "Continue learning",
-    "privacyNote": "This is a demo workspace with fictional data. Briefs and agents use fixed local rules; nothing is sent to an AI service."
+    "privacyNote": "This is a demo workspace with fictional data. Briefs and agents use fixed local rules; nothing is sent to an AI service.",
+    "shortMinutes": "{count}m"
+  },
+  "osMeta": {
+    "todayTitle": "Today · Personal OS",
+    "todayDescription": "Your priorities, plans and local simulations in one workspace.",
+    "financeTitle": "Finance | Personal AI OS",
+    "financeDescription": "Explore fictional personal finances.",
+    "travelTitle": "Travel | Personal AI OS",
+    "travelDescription": "Explore a fictional Lisbon itinerary.",
+    "learningTitle": "Learning | Personal AI OS",
+    "learningDescription": "Build a steady learning habit.",
+    "agentsTitle": "AI Agents | Personal AI OS",
+    "agentsDescription": "Explore local agent simulations."
   }
 }

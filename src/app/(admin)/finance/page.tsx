@@ -1,14 +1,13 @@
 import FinanceDashboard from "@/components/personal-os/finance";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Finance | Personal AI OS",
-  description:
-    "Explore a mock personal finance overview. All figures are fictional.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: "zh-TW", namespace: "osMeta" });
+  return { title: t("financeTitle"), description: t("financeDescription") };
+}
 
 export default function FinancePage() {
-  setRequestLocale("en");
+  setRequestLocale("zh-TW");
   return <FinanceDashboard />;
 }

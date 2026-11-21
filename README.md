@@ -1,4 +1,4 @@
-> This is the private static hosting copy. See [hosting configuration](docs/HOSTING.md) for the English route adapter and build commands. The original review branch remains in [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1).
+> This is the private static hosting copy, now displayed in Traditional Chinese (zh-TW). See [hosting configuration](docs/HOSTING.md) for the English route adapter and build commands. The original review branch remains in [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1).
 
 # Personal AI OS — MVP v0.1
 

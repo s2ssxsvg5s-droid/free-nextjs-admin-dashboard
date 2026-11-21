@@ -36,7 +36,9 @@ export default function CashflowChart() {
     },
     yaxis: {
       tickAmount: 4,
-      labels: { formatter: (value: number) => `$${value / 1000}k` },
+      labels: {
+        formatter: (value: number) => t("axisAmount", { count: value / 1000 }),
+      },
     },
     legend: {
       show: true,

@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { mkdir } from "node:fs/promises";
+import { readFileSync } from "node:fs";
+import { createTranslator } from "next-intl";
+const messages = JSON.parse(
+  readFileSync(new URL("../src/messages/zh-TW.json", import.meta.url), "utf8"),
+);
+const tzh = createTranslator({ locale: "zh-TW", messages });
 import test from "node:test";
 
 const require = createRequire(import.meta.url);
@@ -44,10 +50,11 @@ for (const scenario of cases) {
       await browser.close();
     });
     await page.goto(baseURL, { waitUntil: "networkidle" });
+    assert.equal(await page.locator("html").getAttribute("lang"), "zh-TW");
     await page
       .getByRole("heading", {
         level: 1,
-        name: "A little clarity for your day.",
+        name: tzh("os.greeting"),
       })
       .waitFor();
     await page
@@ -58,35 +65,35 @@ for (const scenario of cases) {
       "Today focus list, completion empty state and local brief loading",
       async () => {
         await page
-          .getByRole("textbox", { name: "Add a focus item" })
-          .fill("Read a chapter");
-        await page.getByRole("button", { name: "Add", exact: true }).click();
-        await page.getByRole("checkbox", { name: "Read a chapter" }).waitFor();
+          .getByRole("textbox", { name: tzh("os.newFocus") })
+          .fill("閱讀一章");
+        await page
+          .getByRole("button", { name: tzh("os.add"), exact: true })
+          .click();
+        await page.getByRole("checkbox", { name: "閱讀一章" }).waitFor();
         while (await page.getByRole("checkbox").count())
           await page.getByRole("checkbox").first().click();
+        await page.getByRole("heading", { name: tzh("os.allDone") }).waitFor();
         await page
-          .getByRole("heading", { name: "A clear list. A clearer head." })
-          .waitFor();
-        await page
-          .getByRole("button", { name: "Refresh brief", exact: true })
+          .getByRole("button", { name: tzh("os.refreshBrief"), exact: true })
           .click();
         assert.equal(
           await page
-            .getByRole("button", { name: "Refreshing…", exact: true })
+            .getByRole("button", {
+              name: tzh("os.refreshingButton"),
+              exact: true,
+            })
             .isDisabled(),
           true,
         );
-        await page
-          .getByText(
-            "Brief refreshed from sample data. No AI service was called.",
-            { exact: true },
-          )
-          .waitFor();
+        await page.getByText(tzh("os.refreshed"), { exact: true }).waitFor();
       },
     );
 
     await t.test("dark mode survives reload", async () => {
-      await page.getByRole("button", { name: "Switch to dark mode" }).click();
+      await page
+        .getByRole("button", { name: tzh("osShell.switchDark") })
+        .click();
       await page.waitForFunction(() =>
         document.documentElement.classList.contains("dark"),
       );
@@ -95,16 +102,21 @@ for (const scenario of cases) {
         await page.locator("html").getAttribute("data-color-scheme"),
         "dark",
       );
-      await page.getByRole("button", { name: "Switch to light mode" }).click();
+      await page
+        .getByRole("button", { name: tzh("osShell.switchLight") })
+        .click();
     });
 
     async function navigate(name, path) {
       if (scenario.name.includes("iPhone"))
         await page
-          .getByRole("button", { name: "Open navigation", exact: true })
+          .getByRole("button", {
+            name: tzh("osShell.openNavigation"),
+            exact: true,
+          })
           .click();
       await page
-        .getByRole("navigation", { name: "Main navigation" })
+        .getByRole("navigation", { name: tzh("osShell.navigationLabel") })
         .getByRole("link", { name, exact: true })
         .click();
       await page.waitForURL(
@@ -128,53 +140,69 @@ for (const scenario of cases) {
     await t.test(
       "navigation and Finance search/reset empty state",
       async () => {
-        await navigate("Finance", "/finance");
+        await navigate(tzh("osSections.finance.title"), "/finance");
         await page.locator(".apexcharts-canvas").waitFor();
         const search = page.getByRole("searchbox", {
-          name: "Search transactions",
+          name: tzh("osSections.finance.searchLabel"),
         });
-        await search.fill("no-match-demo");
+        await search.fill("河畔");
         await page
-          .getByRole("heading", { name: "No spending found" })
+          .getByText(tzh("osSections.finance.merchants.tx-1"), { exact: true })
           .waitFor();
-        await page.getByRole("button", { name: "Clear search" }).click();
-        await page.getByText("Riverside Apartments", { exact: true }).waitFor();
+        await search.fill(tzh("osSections.finance.categories.food"));
+        await page
+          .getByText(tzh("osSections.finance.merchants.tx-2"), { exact: true })
+          .waitFor();
+        await search.fill("找不到的項目");
+        await page
+          .getByRole("heading", { name: tzh("osSections.finance.emptyTitle") })
+          .waitFor();
+        await page
+          .getByRole("button", { name: tzh("osSections.finance.clearSearch") })
+          .click();
+        await page
+          .getByText(tzh("osSections.finance.merchants.tx-1"), { exact: true })
+          .waitFor();
         assert.equal(await search.inputValue(), "");
       },
     );
 
     await t.test("Travel packing checklist reaches completion", async () => {
-      await navigate("Travel", "/travel");
+      await navigate(tzh("osSections.travel.title"), "/travel");
       for (const checkbox of await page.getByRole("checkbox").all())
         if (!(await checkbox.isChecked())) await checkbox.click();
       await page
-        .getByText(
-          "All essentials packed. You’re ready for the next adventure.",
-          { exact: true },
-        )
+        .getByText(tzh("osSections.travel.packingComplete"), { exact: true })
         .waitFor();
     });
 
     await t.test(
       "Learning logs a session and caps completed courses",
       async () => {
-        await navigate("Learning", "/learning");
+        await navigate(tzh("osLearning.title"), "/learning");
         await page
-          .getByRole("heading", { name: "Your next small step starts here" })
+          .getByRole("heading", { name: tzh("osLearning.emptyTitle") })
           .waitFor();
         await page
-          .getByRole("button", { name: "Log 15-minute session" })
+          .getByRole("button", { name: tzh("osLearning.logSession") })
           .first()
           .click();
-        await page.getByText("155 min", { exact: true }).waitFor();
+        await page
+          .getByText(tzh("osLearning.minuteValue", { minutes: 155 }), {
+            exact: true,
+          })
+          .waitFor();
         for (let i = 0; i < 4; i++)
           await page
-            .getByRole("button", { name: "Log 15-minute session" })
+            .getByRole("button", { name: tzh("osLearning.logSession") })
             .first()
             .click();
         assert.equal(
           await page
-            .getByRole("button", { name: "Course completed", exact: true })
+            .getByRole("button", {
+              name: tzh("osLearning.completed"),
+              exact: true,
+            })
             .isDisabled(),
           true,
         );
@@ -184,33 +212,40 @@ for (const scenario of cases) {
     await t.test(
       "Agents pause, simulate loading, finish and reset",
       async () => {
-        await navigate("AI Agents", "/agents");
-        await page.getByRole("button", { name: "Pause queue" }).click();
+        await navigate(tzh("osAgents.title"), "/agents");
+        await page.getByRole("button", { name: tzh("osAgents.pause") }).click();
         assert.equal(
           await page
-            .getByRole("button", { name: "Run next demo" })
+            .getByRole("button", { name: tzh("osAgents.runNext") })
             .isDisabled(),
           true,
         );
-        await page.getByRole("button", { name: "Resume queue" }).click();
+        await page
+          .getByRole("button", { name: tzh("osAgents.resume") })
+          .click();
         for (let i = 0; i < 3; i++) {
-          await page.getByRole("button", { name: "Run next demo" }).click();
+          await page
+            .getByRole("button", { name: tzh("osAgents.runNext") })
+            .click();
           assert.equal(
             await page
-              .getByRole("button", { name: "Running demo…", exact: true })
+              .getByRole("button", {
+                name: tzh("osAgents.running"),
+                exact: true,
+              })
               .isDisabled(),
             true,
           );
           await page
             .getByRole("button", {
-              name: i === 2 ? "Reset demo" : "Run next demo",
+              name: i === 2 ? tzh("osAgents.reset") : tzh("osAgents.runNext"),
             })
             .waitFor();
         }
-        await page.getByRole("button", { name: "Reset demo" }).click();
+        await page.getByRole("button", { name: tzh("osAgents.reset") }).click();
         await page
           .getByRole("heading", {
-            name: "A clear activity log, from the start",
+            name: tzh("osAgents.emptyTitle"),
           })
           .waitFor();
       },
@@ -233,10 +268,10 @@ for (const scenario of cases) {
           ]) {
             await page.goto(`${baseURL}${path}`, { waitUntil: "networkidle" });
             const darkToggle = page.getByRole("button", {
-              name: "Switch to dark mode",
+              name: tzh("osShell.switchDark"),
             });
             if (await darkToggle.count()) await darkToggle.click();
-            const chartData = page.getByText("View chart data", {
+            const chartData = page.getByText(tzh("os.chartData"), {
               exact: true,
             });
             if (await chartData.count()) await chartData.click();
@@ -275,11 +310,11 @@ for (const scenario of cases) {
         });
         await page.goto(baseURL, { waitUntil: "networkidle" });
         const button = page.getByRole("button", {
-          name: "Switch to dark mode",
+          name: tzh("osShell.switchDark"),
         });
         await button.click();
         await page
-          .getByRole("button", { name: "Switch to light mode" })
+          .getByRole("button", { name: tzh("osShell.switchLight") })
           .waitFor();
         assert.deepEqual(errors, []);
       },

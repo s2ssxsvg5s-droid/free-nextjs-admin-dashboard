@@ -24,6 +24,7 @@ import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
+import { useTranslations } from "next-intl";
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -183,6 +184,7 @@ function Sidebar({
   variant?: "sidebar" | "floating" | "inset";
   collapsible?: "offcanvas" | "icon" | "none";
 }) {
+  const t = useTranslations("osShell");
   const {
     isMobile,
     state,
@@ -229,8 +231,8 @@ function Sidebar({
           showCloseButton={false}
         >
           <SheetHeader className="sr-only">
-            <SheetTitle>Sidebar</SheetTitle>
-            <SheetDescription>Displays the mobile sidebar.</SheetDescription>
+            <SheetTitle>{t("sidebarTitle")}</SheetTitle>
+            <SheetDescription>{t("sidebarDescription")}</SheetDescription>
           </SheetHeader>
           <div className="flex h-full w-full flex-col">{children}</div>
         </SheetContent>
@@ -344,7 +346,7 @@ function SidebarInset({ className, ...props }: React.ComponentProps<"main">) {
     <main
       data-slot="sidebar-inset"
       className={cn(
-        "relative flex min-w-0 w-full flex-1 flex-col transition-all duration-300 ease-in-out xl:peer-data-[variant=inset]:m-2 xl:peer-data-[variant=inset]:ms-0 xl:peer-data-[variant=inset]:rounded-xl xl:peer-data-[variant=inset]:shadow-sm xl:peer-data-[variant=inset]:peer-data-[state=collapsed]:ms-2",
+        "relative flex w-full min-w-0 flex-1 flex-col transition-all duration-300 ease-in-out xl:peer-data-[variant=inset]:m-2 xl:peer-data-[variant=inset]:ms-0 xl:peer-data-[variant=inset]:rounded-xl xl:peer-data-[variant=inset]:shadow-sm xl:peer-data-[variant=inset]:peer-data-[state=collapsed]:ms-2",
         className,
       )}
       {...props}

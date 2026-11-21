@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const locale: Locale = "en";
+  const locale: Locale = "zh-TW";
 
   setRequestLocale(locale);
 

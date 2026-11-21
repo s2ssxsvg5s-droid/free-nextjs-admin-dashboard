@@ -1,14 +1,13 @@
 import TravelDashboard from "@/components/personal-os/travel";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Travel | Personal AI OS",
-  description:
-    "A fictional Lisbon itinerary and interactive packing checklist.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: "zh-TW", namespace: "osMeta" });
+  return { title: t("travelTitle"), description: t("travelDescription") };
+}
 
 export default function TravelPage() {
-  setRequestLocale("en");
+  setRequestLocale("zh-TW");
   return <TravelDashboard />;
 }

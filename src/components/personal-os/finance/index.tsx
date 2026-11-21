@@ -17,7 +17,7 @@ export default function FinanceDashboard() {
   const t = useTranslations("osSections.finance");
   const [query, setQuery] = useState("");
   const visibleTransactions = transactions.filter((transaction) =>
-    `${transaction.merchant} ${t(`categories.${transaction.category}`)}`
+    `${t(`merchants.${transaction.id}`)} ${transaction.merchant} ${t(`categories.${transaction.category}`)}`
       .toLowerCase()
       .includes(query.trim().toLowerCase()),
   );

@@ -1,14 +1,13 @@
 import Agents from "@/components/personal-os/agents";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "AI Agents | Personal AI OS",
-  description:
-    "Explore a deterministic local agent simulation using mock data.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: "zh-TW", namespace: "osMeta" });
+  return { title: t("agentsTitle"), description: t("agentsDescription") };
+}
 
 export default function AgentsPage() {
-  setRequestLocale("en");
+  setRequestLocale("zh-TW");
   return <Agents />;
 }

@@ -1,13 +1,13 @@
 import Learning from "@/components/personal-os/learning";
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Learning | Personal AI OS",
-  description: "Build a steady learning habit with a local demo learning plan.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({ locale: "zh-TW", namespace: "osMeta" });
+  return { title: t("learningTitle"), description: t("learningDescription") };
+}
 
 export default function LearningPage() {
-  setRequestLocale("en");
+  setRequestLocale("zh-TW");
   return <Learning />;
 }
