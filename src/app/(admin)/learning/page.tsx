@@ -7,12 +7,7 @@ export const metadata: Metadata = {
   description: "Build a steady learning habit with a local demo learning plan.",
 };
 
-export default async function LearningPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function LearningPage() {
+  setRequestLocale("en");
   return <Learning />;
 }

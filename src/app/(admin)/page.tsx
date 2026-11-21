@@ -8,12 +8,7 @@ export const metadata: Metadata = {
     "Your day, finances, travel, learning and local agent demos in one personal workspace.",
 };
 
-export default async function TodayPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function TodayPage() {
+  setRequestLocale("en");
   return <TodayDashboard />;
 }

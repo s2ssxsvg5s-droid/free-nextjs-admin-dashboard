@@ -8,12 +8,7 @@ export const metadata: Metadata = {
     "A fictional Lisbon itinerary and interactive packing checklist.",
 };
 
-export default async function TravelPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function TravelPage() {
+  setRequestLocale("en");
   return <TravelDashboard />;
 }

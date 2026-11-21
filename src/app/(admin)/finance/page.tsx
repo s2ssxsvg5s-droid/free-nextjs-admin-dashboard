@@ -8,12 +8,7 @@ export const metadata: Metadata = {
     "Explore a mock personal finance overview. All figures are fictional.",
 };
 
-export default async function FinancePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function FinancePage() {
+  setRequestLocale("en");
   return <FinanceDashboard />;
 }

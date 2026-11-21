@@ -8,12 +8,7 @@ export const metadata: Metadata = {
     "Explore a deterministic local agent simulation using mock data.",
 };
 
-export default async function AgentsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+export default function AgentsPage() {
+  setRequestLocale("en");
   return <Agents />;
 }

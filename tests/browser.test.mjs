@@ -107,7 +107,11 @@ for (const scenario of cases) {
         .getByRole("navigation", { name: "Main navigation" })
         .getByRole("link", { name, exact: true })
         .click();
-      await page.waitForURL(`${baseURL}${path}`);
+      await page.waitForURL(
+        (url) =>
+          url.origin === new URL(baseURL).origin &&
+          url.pathname.replace(/\/$/, "") === path,
+      );
       await page
         .getByRole("heading", { level: 1, name, exact: true })
         .waitFor();

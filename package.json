@@ -3,13 +3,14 @@
   "version": "2.5.2",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/serve-static.mjs",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/serve-static.mjs",
     "lint": "eslint .",
     "test": "node --test tests/fixtures.test.mjs",
     "test:e2e": "node --test tests/browser.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev:next": "next dev"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
