@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "node scripts/serve-static.mjs",
     "lint": "eslint .",
-    "test": "node --test tests/fixtures.test.mjs",
+    "test": "node --test --test-isolation=none tests/fixtures.test.mjs tests/personal-context.test.mjs tests/context-store.test.mjs",
     "test:e2e": "node --test tests/browser.test.mjs",
     "typecheck": "tsc --noEmit",
     "dev:next": "next dev"

@@ -46,7 +46,7 @@ Non-fatal warnings: npm reported three inherited install scripts not approved by
 
 ## GitHub publication
 
-Initial publication attempts returned HTTP 403 for Git HTTPS push and `Resource not accessible by integration` for connector branch creation. This provider-access issue was resolved on 2026-11-21 after the user installed the ChatGPT Codex Connector. The development branch `feat/personal-ai-os-v0.1` is published in the user’s fork and [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) is open for review. Nothing has been merged or deployed. The patch, source archive and Git bundle outside the checkout are optional handoff copies. These documentation updates do not change the previously tested application code.
+Initial publication attempts returned HTTP 403 for Git HTTPS push and `Resource not accessible by integration` for connector branch creation. This provider-access issue was resolved on 2026-11-21 after the user installed the ChatGPT Codex Connector. The original development branch `feat/personal-ai-os-v0.1` is published in the user's fork. [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) was merged outside this deployment workflow. The owner subsequently authorized private hosting; the hosted source is reviewed in [PR #2](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/2). No merge operation was executed by this workflow.
 
 ## Limits
 
@@ -54,4 +54,16 @@ WebKit device emulation validates the browser engine and responsive behavior; a 
 
 The route-loading skeleton and retryable error boundary are implemented. The browser tests exercise simulated widget loading and empty states; they do not deliberately corrupt production route rendering to trigger the error boundary. Upstream demo pages are included in lint/typecheck/build but are outside the five-route browser suite.
 
-No real provider, banking, financial execution, travel booking, authentication or AI integration was tested or implemented. Local interactions reset on page unmount/reload except theme preference.
+No real provider, banking, financial execution, travel booking, authentication or AI integration was tested or implemented. Demo interactions reset on page unmount/reload except theme preference. The separately supplied conversation summary is saved only after the owner's explicit device-storage action.
+
+## Conversation-summary update — 2026-11-22
+
+Scope: the Traditional Chinese static hosting copy and its new manually reviewed conversation-context importer. These results do not extend the original browser run above.
+
+- `npm test`: 21 passed, 0 failed/skipped. Includes four fixture/localization/license checks, ten schema/encoding checks, and seven storage/subscription checks. Tests use fictional records only.
+- Schema checks cover strict fields and provenance, dates, Unicode/emoji round trips, malformed UTF-8/JSON/base64, duplicate IDs, record limits, and the 6,000-byte JSON/8,000-character encoded boundary.
+- Storage checks verify that preview does not write or scrub the fragment, explicit save persists and removes the fragment, cancel preserves a previous summary, denied writes remain truthfully session-only, and failed deletion retains a warning until retry succeeds. Event listeners are removed on unsubscribe.
+- Production static build and full TypeScript check passed. Full lint passed with 0 errors and the same 1,092 inherited warnings; targeted ESLint had no warnings/errors. `git diff --check` passed.
+- No application dependencies, credentials, real profile packets or external account connections were added. The MIT notice remains unchanged.
+
+The managed preview relay remains unavailable after its documented port-opening failure. This change therefore has no new browser or physical-iPhone run; UI behavior and fragment preservation through a hosting sign-in redirect remain unverified in a live browser. Source review, unit checks, static output checks and the production build are the available verification for this update. Node's non-fatal module-type warning for direct TypeScript imports remains.

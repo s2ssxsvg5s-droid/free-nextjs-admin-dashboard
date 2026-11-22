@@ -48,6 +48,7 @@ test("Traditional Chinese dashboard messages preserve keys and interpolation arg
     "osLearning",
     "osAgents",
     "osMeta",
+    "osContext",
     "notFound",
   ]) {
     const source = Object.fromEntries(flatten(english[namespace]));
