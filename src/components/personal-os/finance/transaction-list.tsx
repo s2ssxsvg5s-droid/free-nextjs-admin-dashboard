@@ -41,13 +41,13 @@ export default function TransactionList({
           </span>
           <div className="min-w-0 flex-1">
             <p className="text-sm font-medium text-gray-800 dark:text-gray-100">
-              {transaction.merchant}
+              {t(`merchants.${transaction.id}`)}
             </p>
             <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
               {t(`categories.${transaction.category}`)} ·{" "}
               <time dateTime={transaction.date}>
                 {new Date(`${transaction.date}T12:00:00Z`).toLocaleDateString(
-                  "en-US",
+                  "zh-TW",
                   { month: "short", day: "numeric", timeZone: "UTC" },
                 )}
               </time>

@@ -61,7 +61,7 @@ export default function TravelDashboard() {
               id="trip-title"
               className="text-4xl font-semibold tracking-tight sm:text-5xl"
             >
-              Lisbon
+              {t("destination")}
             </h2>
             <p className="mt-3 flex items-center gap-2 text-sm text-brand-100">
               <CalendarIcon aria-hidden="true" className="size-4" />
@@ -116,7 +116,7 @@ export default function TravelDashboard() {
             </span>
             <div>
               <h3 className="font-medium text-gray-800 dark:text-gray-100">
-                Alfama Studio
+                {t("stayName")}
               </h3>
               <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 {t("stayLocation")}

@@ -13,6 +13,7 @@ import {
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { courses } from "../learning/data";
+import PersonalContextCard from "../personal-context";
 import MetricCard from "../shared/metric-card";
 import PageHeading from "../shared/page-heading";
 import SectionCard from "../shared/section-card";
@@ -56,6 +57,7 @@ export default function TodayDashboard() {
           </span>
         }
       />
+      <PersonalContextCard />
       <section
         className="relative overflow-hidden rounded-2xl bg-linear-to-br from-brand-950 via-brand-900 to-brand-700 p-5 text-white sm:p-7"
         aria-labelledby="brief-title"

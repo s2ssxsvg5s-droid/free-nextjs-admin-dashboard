@@ -1,0 +1,1241 @@
+{
+  "common": {
+    "home": "Home",
+    "edit": "Edit",
+    "close": "Close",
+    "saveChanges": "Save Changes",
+    "viewMore": "View More",
+    "delete": "Delete",
+    "filter": "Filter",
+    "seeAll": "See all",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "sidebar": {
+    "groups": {
+      "menu": "Menu",
+      "support": "Support",
+      "others": "Others"
+    },
+    "badges": {
+      "new": "new",
+      "pro": "pro"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "ecommerceHome": "Ecommerce",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "crm": "CRM",
+      "stocks": "Stocks",
+      "saas": "SaaS",
+      "logistics": "Logistics",
+      "ai": "AI",
+      "sales": "Sales",
+      "finance": "Finance",
+      "aiAssistant": "AI Assistant",
+      "textGenerator": "Text Generator",
+      "imageGenerator": "Image Generator",
+      "codeGenerator": "Code Generator",
+      "videoGenerator": "Video Generator",
+      "aiSettings": "AI Settings",
+      "ecommerce": "E-commerce",
+      "products": "Products",
+      "addProduct": "Add Product",
+      "billing": "Billing",
+      "invoices": "Invoices",
+      "singleInvoice": "Single Invoice",
+      "createInvoice": "Create Invoice",
+      "transactions": "Transactions",
+      "singleTransaction": "Single Transaction",
+      "calendar": "Calendar",
+      "userProfile": "User Profile",
+      "task": "Task",
+      "taskList": "List",
+      "kanban": "Kanban",
+      "forms": "Forms",
+      "formElements": "Form Elements",
+      "formLayout": "Form Layout",
+      "tables": "Tables",
+      "basicTables": "Basic Tables",
+      "dataTables": "Data Tables",
+      "pages": "Pages",
+      "fileManager": "File Manager",
+      "pricingTables": "Pricing Tables",
+      "faq": "FAQ",
+      "apiKeys": "API Keys",
+      "integrations": "Integrations",
+      "blankPage": "Blank Page",
+      "error404": "404 Error",
+      "error500": "500 Error",
+      "error503": "503 Error",
+      "comingSoon": "Coming Soon",
+      "maintenance": "Maintenance",
+      "successPage": "Success",
+      "layouts": "Layouts",
+      "layoutOne": "Layout One",
+      "layoutTwo": "Layout Two",
+      "layoutThree": "Layout Three",
+      "layoutFour": "Layout Four",
+      "layoutFive": "Layout Five",
+      "layoutSix": "Layout Six",
+      "charts": "Charts",
+      "lineChart": "Line Chart",
+      "barChart": "Bar Chart",
+      "pieChart": "Pie Chart",
+      "radarChart": "Radar Chart",
+      "radialChart": "Radial Chart",
+      "maps": "Maps",
+      "mapsGoogle": "Maps",
+      "vectorMap": "Vector Map",
+      "uiElements": "UI Elements",
+      "alerts": "Alerts",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "breadcrumb": "Breadcrumb",
+      "buttons": "Buttons",
+      "buttonsGroup": "Buttons Group",
+      "cards": "Cards",
+      "carousel": "Carousel",
+      "dropdowns": "Dropdowns",
+      "images": "Images",
+      "links": "Links",
+      "listView": "List",
+      "modals": "Modals",
+      "notificationUi": "Notification",
+      "pagination": "Pagination",
+      "popovers": "Popovers",
+      "progressbar": "Progressbar",
+      "ribbons": "Ribbons",
+      "spinners": "Spinners",
+      "tabs": "Tabs",
+      "tooltips": "Tooltips",
+      "videos": "Videos",
+      "authentication": "Authentication",
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "resetPassword": "Reset Password",
+      "twoStepVerification": "Two Step Verification",
+      "chat": "Chat",
+      "supportMenu": "Support",
+      "supportList": "Support List",
+      "supportReply": "Support Reply",
+      "email": "Email",
+      "inbox": "Inbox",
+      "inboxDetails": "Details"
+    },
+    "widget": {
+      "title": "#1 Tailwind CSS Dashboard",
+      "description": "Leading Tailwind CSS Admin Template with 500+ UI Component and Pages.",
+      "purchaseNow": "Purchase Now"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Search or type command...",
+    "toggleSidebar": "Toggle Sidebar",
+    "notifications": {
+      "title": "Notification",
+      "requestsPermission": "requests permission to change",
+      "project": "Project",
+      "minAgo": "{count} min ago",
+      "hrAgo": "{count} hr ago",
+      "viewAll": "View All Notifications"
+    }
+  },
+  "userDropdown": {
+    "editProfile": "Edit profile",
+    "accountSettings": "Account settings",
+    "support": "Support",
+    "language": "Language",
+    "signOut": "Sign out"
+  },
+  "ecommerce": {
+    "title": "E-commerce Dashboard",
+    "metrics": {
+      "customers": "Customers",
+      "orders": "Orders"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "monthlySales": {
+      "title": "Monthly Sales",
+      "series": "Sales"
+    },
+    "monthlyTarget": {
+      "title": "Monthly Target",
+      "subtitle": "Target you’ve set for each month",
+      "earned": "You earn {amount} today, it's higher than last month. Keep up your good work!",
+      "target": "Target",
+      "revenue": "Revenue",
+      "today": "Today"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you've set for each month",
+      "overview": "Overview",
+      "sales": "Sales",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually",
+      "selectDateRange": "Select date range"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "price": "Price",
+      "status": "Status",
+      "variants": "{count, plural, one {# Variant} other {# Variants}}",
+      "categories": {
+        "laptop": "Laptop",
+        "watch": "Watch",
+        "smartphone": "SmartPhone",
+        "electronics": "Electronics",
+        "accessories": "Accessories"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "pending": "Pending",
+        "canceled": "Canceled"
+      }
+    },
+    "demographic": {
+      "title": "Customers Demographic",
+      "subtitle": "Number of customer based on country",
+      "customers": "{count} Customers",
+      "usa": "USA",
+      "france": "France",
+      "yemen": "Yemen",
+      "uk": "United Kingdom"
+    }
+  },
+  "analytics": {
+    "metrics": {
+      "uniqueVisitors": "Unique Visitors",
+      "totalPageviews": "Total Pageviews",
+      "bounceRate": "Bounce Rate",
+      "visitDuration": "Visit Duration",
+      "vsLastMonth": "Vs last month"
+    },
+    "barChart": {
+      "title": "Analytics",
+      "subtitle": "Visitor analytics of last 30 days"
+    },
+    "topChannels": {
+      "title": "Top Channels",
+      "source": "Source",
+      "visitors": "Visitors",
+      "channelsReport": "Channels Report"
+    },
+    "topPages": {
+      "title": "Top Pages",
+      "source": "Source",
+      "pageview": "Pageview",
+      "channelsReport": "Channels Report"
+    },
+    "activeUsers": {
+      "title": "Active Users",
+      "liveVisitors": "Live visitors",
+      "avgDaily": "Avg, Daily",
+      "avgWeekly": "Avg, Weekly",
+      "avgMonthly": "Avg, Monthly"
+    },
+    "acquisitionChannels": {
+      "title": "Acquisition Channels"
+    },
+    "session": {
+      "title": "Sessions By Device"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "country": "Country",
+      "cr": "CR",
+      "value": "Value",
+      "categories": {
+        "uiKits": "UI Kits",
+        "templates": "Templates",
+        "saas": "SaaS"
+      },
+      "crDashboard": "Dashboard"
+    }
+  },
+  "notFound": {
+    "error": "找不到頁面",
+    "message": "抱歉，找不到您要查看的頁面。",
+    "backHome": "返回首頁"
+  },
+  "marketing": {
+    "metrics": {
+      "avgClientRating": "Avg. Client Rating",
+      "instagramFollowers": "Instagram Followers",
+      "totalRevenue": "Total Revenue",
+      "vsLastMonth": "Vs last month"
+    },
+    "impressionChart": {
+      "title": "Impression & Data Traffic",
+      "totalRevenue": "Total Revenue",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "featuredCampaign": {
+      "title": "Featured Campaigns",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "products": "Products",
+      "campaign": "Campaign",
+      "status": "Status",
+      "adsCampaign": "Ads campaign",
+      "campaigns": {
+        "growBrand": "Grow your brand by...",
+        "betterIdeas": "Make Better Ideas...",
+        "increaseTraffic": "Increase your website tra..."
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    },
+    "trafficStats": {
+      "title": "Traffic Stats",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newSubscribers": "New Subscribers",
+      "conversionRate": "Conversion Rate",
+      "pageBounceRate": "Page Bounce Rate",
+      "thenLastWeek": "then last Week",
+      "newSales": "New Sales"
+    },
+    "trafficSource": {
+      "title": "Top Traffic Source",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "viewAll": "View All"
+    }
+  },
+  "crm": {
+    "metrics": {
+      "activeDeal": "Active Deal",
+      "revenueTotal": "Revenue Total",
+      "closedDeals": "Closed Deals",
+      "lastMonth": "last month"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you’ve set for each month",
+      "avgYearlyProfit": "Avg. Yearly Profit",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "estimatedRevenue": {
+      "title": "Estimated Revenue",
+      "subtitle": "Target you’ve set for each month",
+      "goals": "June Goals",
+      "marketing": "Marketing",
+      "sales": "Sales"
+    },
+    "salesCategory": {
+      "title": "Sales Category",
+      "affiliate": "Affiliate",
+      "direct": "Direct",
+      "adsense": "Adsense",
+      "affiliateProgram": "Affiliate Program",
+      "directBuy": "Direct Buy",
+      "products": "Products",
+      "total": "Total",
+      "usedOf": "Used of"
+    },
+    "upcomingSchedule": {
+      "title": "Upcoming Schedule",
+      "schedules": {
+        "item1": {
+          "title": "Business Analytics Press",
+          "description": "Exploring the Future of Data-Driven +6 more"
+        },
+        "item2": {
+          "title": "Business Sprint",
+          "description": "Techniques from Business Sprint +2 more"
+        },
+        "item3": {
+          "title": "Customer Review Meeting",
+          "description": "Insights from the Customer Review Meeting +8 more"
+        }
+      }
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "dealId": "Deal ID",
+      "customer": "Customer",
+      "productService": "Product/Service",
+      "dealValue": "Deal Value",
+      "closeDate": "Close Date",
+      "status": "Status",
+      "action": "Action",
+      "products": {
+        "softwareLicense": "Software License",
+        "cloudHosting": "Cloud Hosting",
+        "webDomain": "Web Domain",
+        "sslCertificate": "SSL Certificate",
+        "premiumSupport": "Premium Support"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "stocks": {
+    "title": "Stocks",
+    "dividend": {
+      "title": "Dividend",
+      "series": "Dividend",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "portfolioPerformance": {
+      "title": "Portfolio Performance",
+      "subtitle": "Here is your performance stats of each month",
+      "series": "Portfolio Performance"
+    },
+    "trendingStocks": {
+      "title": "Trending Stocks",
+      "shortStock": "Short Stock",
+      "buyStock": "Buy Stock"
+    },
+    "watchlist": {
+      "title": "My Watchlist",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "latestTransactions": {
+      "title": "Latest Transactions",
+      "searchPlaceholder": "Search...",
+      "table": {
+        "name": "Name",
+        "date": "Date",
+        "price": "Price",
+        "category": "Category",
+        "status": "Status"
+      },
+      "actions": {
+        "bought": "Bought {symbol}",
+        "sell": "Sell {symbol}"
+      },
+      "categories": {
+        "finance": "Finance"
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    }
+  },
+  "saas": {
+    "title": "SaaS",
+    "metrics": {
+      "overview": "Overview",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "clv": "Customer Lifetime Value",
+      "cac": "Customer Acquisition Cost"
+    },
+    "churnRate": {
+      "title": "Churn Rate",
+      "subtitle": "Downgrade to Free plan",
+      "thanLastWeek": "than last Week",
+      "series": "Churn Rate",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "userGrowth": {
+      "title": "User Growth",
+      "subtitle": "New signups website + mobile",
+      "thanLastWeek": "than last Week",
+      "series": "Revenue",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "conversionFunnel": {
+      "title": "Conversion Funnel",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "series": {
+        "adImpressions": "Ad Impressions",
+        "websiteSession": "Website Session",
+        "appDownload": "App Download",
+        "newUsers": "New Users"
+      }
+    },
+    "recentInvoices": {
+      "title": "Recent Invoices",
+      "table": {
+        "serialNo": "Serial No:",
+        "closeDate": "Close Date",
+        "user": "User",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      }
+    },
+    "productPerformance": {
+      "title": "Product Performance",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "tabs": {
+        "dailySales": "Daily Sales",
+        "onlineSales": "Online Sales",
+        "newUsers": "New Users"
+      },
+      "digitalProduct": "Digital Product",
+      "physicalProduct": "Physical Product",
+      "avgDailySales": "Average Daily Sales",
+      "totalOnlineSales": "Total Online Sales",
+      "addedLastMonth": "Added last month",
+      "totalNewUsers": "Total New Users",
+      "series": {
+        "sales": "Sales",
+        "revenue": "Revenue"
+      }
+    },
+    "activities": {
+      "title": "Activities",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newInvoice": "New invoice",
+      "createdInvoice": "created invoice"
+    }
+  },
+  "logistics": {
+    "title": "Logistics",
+    "metrics": {
+      "totalOrders": "Total Orders",
+      "ordersInTransit": "Orders in Transit"
+    },
+    "deliveryStatistics": {
+      "title": "Delivery Statistics",
+      "subtitle": "Total number of deliveries 70.5K",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "shipment": "Shipment",
+      "delivery": "Delivery"
+    },
+    "revenueEarned": {
+      "totalRevenue": "Total revenue earned",
+      "shippedQuantities": "Shipped quantities",
+      "newSales": "New Sales"
+    },
+    "deliveryVehicle": {
+      "title": "Delivery Vehicles",
+      "subtitle": "Vehicles operating on the road",
+      "thanLastWeek": "than last Week",
+      "onRoute": "On-route"
+    },
+    "trackingDelivery": {
+      "title": "Tracking Delivery",
+      "subtitle": "Last viewed delivery history"
+    },
+    "trackingProgress": {
+      "trackingId": "Tracking ID",
+      "inTransit": "In Transit",
+      "pickedUp": "Picked up",
+      "delivered": "Delivered"
+    },
+    "deliveryMan": {
+      "courier": "Courier"
+    },
+    "deliveriesActivity": {
+      "title": "Delivery Activities",
+      "subtitle": "Track your recent shipping activities",
+      "tabs": {
+        "all": "All",
+        "delivered": "Delivered",
+        "inTransit": "In-Transit",
+        "pending": "Pending",
+        "processing": "Processing"
+      },
+      "filter": {
+        "button": "Filter",
+        "category": "Category",
+        "searchCategory": "Search category...",
+        "company": "Company",
+        "searchCompany": "Search company...",
+        "apply": "Apply"
+      },
+      "table": {
+        "orderId": "Order ID",
+        "category": "Category",
+        "company": "Company",
+        "arrivalTime": "Arrival Time",
+        "route": "Route",
+        "price": "Price",
+        "status": "Status"
+      },
+      "categories": {
+        "furniture": "Furniture",
+        "clothing": "Clothing",
+        "books": "Books",
+        "automotive": "Automotive",
+        "electronics": "Electronics",
+        "health": "Health",
+        "toys": "Toys",
+        "kitchen": "Kitchen",
+        "beauty": "Beauty",
+        "sports": "Sports"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "inTransit": "In Transit",
+        "canceled": "Canceled"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "page": "Page"
+      }
+    }
+  },
+  "aiDashboard": {
+    "stats": {
+      "users": "Users",
+      "projects": "Projects",
+      "revenue": "Revenue",
+      "paidUsers": "Paid Users",
+      "last30Days": "Last 30 Days"
+    },
+    "userRevenue": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "users": "Users",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually"
+    },
+    "apiToken": {
+      "title": "API Token Usages",
+      "totalApiTokenUsed": "Total API Token Used",
+      "tokenUsed": "Token used",
+      "configuredKey": "{count, plural, one {# API key configured} other {# API keys configured}}",
+      "viewAllUsageDetails": "View All Usage Details"
+    },
+    "userAnalytics": {
+      "title": "User Analytics",
+      "subtitle": "Platform user insights",
+      "totalUsers": "Total Users",
+      "freeUsers": "Free Users",
+      "paidUsers": "Paid Users",
+      "ofTotalUser": "of total user",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "projectAnalytics": {
+      "title": "Projects Analytics",
+      "subtitle": "View detailed project insights",
+      "totalProjects": "Total Projects",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "projectCreated": "Project created",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "recentTransactions": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "paidBy": "Paid By",
+        "packageName": "Package Name",
+        "price": "Price",
+        "paidDate": "Paid Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "packages": {
+        "starterMonthly": "Starter - Monthly",
+        "growthYearly": "Growth - Yearly",
+        "premiumMonthly": "Premium - Monthly"
+      },
+      "statuses": {
+        "active": "Active",
+        "expired": "Expired"
+      },
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "pageOf": "Page {current} of {total}"
+      }
+    }
+  },
+  "sales": {
+    "salesStats": {
+      "title": "Sales Dashboard",
+      "subtitle": "Track revenue, performance, and sales growth in real-time",
+      "selectDateRange": "Select date range",
+      "export": "Export",
+      "totalRevenue": "Total Revenue",
+      "totalSales": "Total Sales",
+      "conversionRate": "Conversion Rate",
+      "refundRate": "Refund Rate",
+      "vsLastMonth": "vs last month",
+      "newSales": "New Sales"
+    },
+    "userRevenueStats": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "onlineSales": "Online Sales",
+      "offlineSales": "Offline Sales"
+    },
+    "userRetention": {
+      "title": "User Retention",
+      "subtitle": "User engagement over time",
+      "increasedVsLastWeek": "Increased vs last week"
+    },
+    "salesByChannel": {
+      "title": "Sales by Channel",
+      "subtitle": "Channel performance overview",
+      "increasedVsLastWeek": "Increased vs last week",
+      "channels": {
+        "website": "Website",
+        "email": "Email",
+        "socialMedia": "Social Media"
+      },
+      "table": {
+        "channels": "Channels",
+        "metric": "Metric",
+        "total": "Total"
+      }
+    },
+    "salesByCountry": {
+      "title": "Sales by Country",
+      "subtitle": "Country-wise sales overview",
+      "countries": {
+        "usa": "USA",
+        "france": "France",
+        "japan": "Japan",
+        "germany": "Germany"
+      }
+    },
+    "topProducts": {
+      "title": "Top Products",
+      "table": {
+        "productName": "Product Name",
+        "category": "Category",
+        "sales": "Sales",
+        "earnings": "Earnings",
+        "stocks": "Stocks",
+        "status": "Status"
+      },
+      "products": {
+        "classicDenimJacket": "Classic Denim Jacket",
+        "slimFitChinos": "Slim Fit Chinos",
+        "organicCottonTShirt": "Organic Cotton T-Shirt",
+        "leatherAnkleBoots": "Leather Ankle Boots"
+      },
+      "variants": {
+        "threeSizes": "3 Sizes",
+        "fourColors": "4 Colors",
+        "fiveColors": "5 Colors",
+        "sixSizes": "6 Sizes"
+      },
+      "categories": {
+        "jacket": "Jacket",
+        "pants": "Pants",
+        "tShirt": "T-Shirt",
+        "footwear": "Footwear"
+      },
+      "statuses": {
+        "inStock": "In Stock",
+        "lowStock": "Low Stock",
+        "outOfStock": "Out of Stock"
+      }
+    }
+  },
+  "finance": {
+    "totalBalanceOverview": {
+      "title": "Total Balance",
+      "overview": "Overview of your current funds",
+      "thanLastMonth": "than last month",
+      "primaryAccount": "Primary Account:",
+      "seeDetails": "See Details",
+      "transfer": "Transfer",
+      "received": "Received",
+      "balance": "Balance"
+    },
+    "stats": {
+      "totalBalance": "Total Balance",
+      "monthlyIncome": "Monthly Income",
+      "totalSpent": "Total Spent",
+      "savingRate": "Saving Rate",
+      "thanLastMonth": "than last month",
+      "goalProgress": "Goal: 30% - 3.9% to go"
+    },
+    "cashflow": {
+      "title": "Cashflow Overview",
+      "totalRevenue": "Total Revenue",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "spending": {
+      "title": "Spending",
+      "yearly": "Yearly",
+      "monthly": "Monthly",
+      "total": "Total",
+      "categories": {
+        "activity": "Activity",
+        "onlinePurchases": "Online Purchases",
+        "groceries": "Groceries",
+        "digitalGoods": "Digital Goods",
+        "stationery": "Stationery",
+        "others": "Others"
+      }
+    },
+    "quickSend": {
+      "title": "Quick send",
+      "sendFrom": "Send From",
+      "currency": "Currency",
+      "amount": "Amount",
+      "sendMoney": "Send Money"
+    },
+    "myCards": {
+      "title": "My Cards",
+      "addCard": "Add Card",
+      "virtualCard": "Virtual Card",
+      "recentTransactions": "Recent Transactions",
+      "seeAllTransactions": "See All Transactions",
+      "transactions": {
+        "paymentReceived": "Payment Received",
+        "cashbackDesc": "Cashback from Stellar Rewards",
+        "netflixSubscription": "Netflix Subscription",
+        "netflixDesc": "September subscription charge",
+        "moneyReceived": "Money received",
+        "paypalDesc": "Payment received via PayPal",
+        "googleAds": "Google Ads",
+        "googleAdsDesc": "Payment received form google ads"
+      }
+    },
+    "transactionsTable": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "orderId": "Order ID",
+        "activity": "Activity",
+        "price": "Price",
+        "date": "Date",
+        "status": "Status"
+      },
+      "activities": {
+        "hotelBooking": "Hotel Booking",
+        "onlineShopping": "Online Shopping",
+        "gamePurchase": "Game Purchase",
+        "utilityBillPayment": "Utility Bill Payment",
+        "onlineCourseEnrollment": "Online Course Enrollment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "inProgress": "In Progress"
+      }
+    }
+  },
+  "osShell": {
+    "brand": "個人 AI 作業系統",
+    "version": "MVP v0.1",
+    "tagline": "每天，讓生活更有條理。",
+    "demo": "含模擬資料",
+    "openNavigation": "開啟導覽選單",
+    "closeNavigation": "關閉導覽選單",
+    "switchLight": "切換為淺色模式",
+    "switchDark": "切換為深色模式",
+    "navigationLabel": "主要導覽",
+    "navigationHeading": "我的工作空間",
+    "navigation": {
+      "today": "今日總覽",
+      "finance": "財務",
+      "travel": "旅遊",
+      "learning": "學習",
+      "agents": "AI 代理"
+    },
+    "workspace": "個人工作空間",
+    "workspaceDescription": "聊天摘要由你確認後儲存在本機；財務、旅遊與 AI 代理仍為模擬資料。",
+    "skipNavigation": "跳至主要內容",
+    "sidebarTitle": "導覽選單",
+    "sidebarDescription": "選擇要查看的儀表板區塊。"
+  },
+  "osLearning": {
+    "eyebrow": "每天一點，持續累積",
+    "title": "學習",
+    "description": "為好奇心留點空間。每次專心學一點，慢慢養成習慣。",
+    "weeklyLabel": "本週學習時間",
+    "minuteValue": "{minutes} 分鐘",
+    "weeklyDetail": "包含 140 分鐘的範例學習紀錄",
+    "coursesLabel": "進行中的課程",
+    "coursesDetail": "兼顧工作與生活的學習安排",
+    "goalLabel": "本週目標",
+    "goalDetail": "專注學習 180 分鐘",
+    "minutes": "{current} / {total} 分鐘",
+    "progressLabel": "{course}學習進度",
+    "completed": "課程已完成",
+    "logSession": "記錄 15 分鐘學習",
+    "sessionsTitle": "你的學習日誌",
+    "sessionsDescription": "在這裡新增的學習紀錄，會保留到你離開或重新整理此頁面為止。",
+    "emptyTitle": "從這裡踏出學習的下一步",
+    "emptyDescription": "為任一課程新增學習紀錄，讓你的學習日誌逐漸累積。",
+    "sessionDetail": "{minutes} 分鐘 · 本次瀏覽",
+    "logged": "已記錄",
+    "sessionAnnouncement": "已為「{course}」記錄 {minutes} 分鐘，學習進度已更新。",
+    "courses": {
+      "typescript": {
+        "title": "TypeScript 基礎入門",
+        "subtitle": "技術技能 · 自主學習",
+        "category": "軟體工程",
+        "description": "掌握型別、泛型與實用的程式設計模式，讓日常開發更有把握。"
+      },
+      "design": {
+        "title": "以人為本的設計",
+        "subtitle": "設計實務 · 自主學習",
+        "category": "設計",
+        "description": "練習將研究中的觀察，轉化為清楚且實用的產品決策。"
+      },
+      "portuguese": {
+        "title": "旅遊葡萄牙語",
+        "subtitle": "生活語言 · 自主學習",
+        "category": "語言",
+        "description": "在里斯本之旅前，學會打招呼、咖啡廳點餐與問路的實用說法。"
+      }
+    }
+  },
+  "osAgents": {
+    "eyebrow": "你的個人支援團隊",
+    "title": "AI 代理",
+    "description": "探索個人助理團隊如何根據情境，提出實用的下一步建議。",
+    "demoNotice": "示範模擬：每個 AI 代理都會使用範例資料，在本機執行固定任務。過程不涉及 AI 模型、帳戶連結、交易或任何對外操作。",
+    "agentsLabel": "示範代理",
+    "agentsDetail": "隨時準備好為你提供協助",
+    "pausedDetail": "你已暫停任務佇列",
+    "queuedLabel": "佇列中的任務",
+    "queuedDetail": "一次執行一項，由你掌握節奏",
+    "completedLabel": "本次已完成",
+    "completedDetail": "本機產生的預覽，可隨時檢視",
+    "runNext": "執行下一項示範",
+    "running": "正在執行示範…",
+    "pause": "暫停佇列",
+    "resume": "繼續佇列",
+    "reset": "重設示範",
+    "localOnly": "本機模擬 · 不存取外部服務",
+    "status": {
+      "queued": "等待執行",
+      "running": "正在本機執行",
+      "completed": "已完成"
+    },
+    "resultsTitle": "代理活動紀錄",
+    "resultsDescription": "已完成模擬的固定範例結果。離開或重新整理頁面後即會重設。",
+    "emptyTitle": "活動紀錄，從空白開始",
+    "emptyDescription": "執行下一項示範，即可在這裡預覽代理的處理結果。",
+    "runningAnnouncement": "「{name}」正在執行本機模擬。",
+    "completeAnnouncement": "「{name}」已完成，範例結果已顯示在下方。",
+    "pausedAnnouncement": "任務佇列已暫停。繼續佇列後，即可執行下一項示範。",
+    "resumedAnnouncement": "任務佇列已繼續，可以執行下一項示範。",
+    "resetAnnouncement": "示範佇列已重設，三項本機任務已準備就緒。",
+    "jobs": {
+      "finance": {
+        "name": "財務夥伴",
+        "description": "整理本月範例支出，確認預算還有多少餘裕。",
+        "result": "範例預算摘要：本月預算 $4,000，已支出 $3,180，剩餘 $820。住房是支出最高的類別。這是固定的示範摘要，不構成財務建議。"
+      },
+      "travel": {
+        "name": "旅遊規劃助理",
+        "description": "檢視你的里斯本行程，提醒一項實用的行前準備。",
+        "result": "範例行程摘要：里斯本，2026 年 11 月 26–30 日。出發前記得帶上輕便雨衣，並確認機場接送安排。"
+      },
+      "learning": {
+        "name": "學習教練",
+        "description": "根據範例的每週學習計畫，建議一個容易開始的小步驟。",
+        "result": "範例學習建議：在里斯本之旅前，花 15 分鐘學習「旅遊葡萄牙語」。今天的一小段學習，就能朝範例設定的每週 180 分鐘目標前進。"
+      }
+    }
+  },
+  "osSections": {
+    "finance": {
+      "eyebrow": "財務總覽",
+      "title": "財務",
+      "description": "讓日常收支更清楚。所有金額皆為虛構資料，幣別為美元。",
+      "netWorth": "淨資產",
+      "netWorthDetail": "現金＋投資資產",
+      "cash": "現金餘額",
+      "cashDetail": "模擬帳戶中的可用金額",
+      "invested": "投資資產",
+      "investedDetail": "示意金額・不提供交易功能",
+      "cashflowTitle": "收入與支出",
+      "cashflowDescription": "2026 年 6–11 月・每月模擬總額",
+      "chartLabel": "每月模擬收入與支出，單位為美元",
+      "chartCaption": "11 月資料統計至 11 月 20 日。所有數字僅供示意，不含即時市場資料。",
+      "income": "收入",
+      "spending": "支出",
+      "month": "月份",
+      "months": {
+        "jun": "6 月",
+        "jul": "7 月",
+        "aug": "8 月",
+        "sep": "9 月",
+        "oct": "10 月",
+        "nov": "11 月"
+      },
+      "budgetTitle": "11 月預算",
+      "budgetDescription": "為生活留點餘裕",
+      "remaining": "可用餘額",
+      "budgetProgress": "11 月預算使用比例",
+      "budgetSummary": "已支出 {spent}，預算共 {limit}・已使用 80%",
+      "saved": "收支結餘",
+      "transactionsTitle": "11 月支出",
+      "transactionsDescription": "模擬交易與類別總額・11 月 1–20 日",
+      "searchLabel": "搜尋交易紀錄",
+      "searchPlaceholder": "搜尋支出…",
+      "results": "{count} 筆相符紀錄",
+      "categories": {
+        "home": "居家",
+        "food": "飲食",
+        "bills": "帳單",
+        "transport": "交通",
+        "subscriptions": "訂閱服務",
+        "travel": "旅遊"
+      },
+      "emptyTitle": "找不到符合的支出",
+      "emptyDescription": "試試商家名稱，或輸入「飲食」、「旅遊」、「居家」等類別。",
+      "clearSearch": "清除搜尋",
+      "connectionsTitle": "帳戶連結",
+      "connectionsEmptyTitle": "示範資料僅在本機使用",
+      "connectionsEmptyDescription": "此 MVP 僅使用模擬帳戶。v0.1 不包含帳戶連結、登入憑證或交易功能。",
+      "chartData": "查看圖表資料",
+      "merchants": {
+        "tx-1": "河畔公寓",
+        "tx-2": "青禾市集",
+        "tx-3": "市政水電費",
+        "tx-4": "巷弄咖啡館",
+        "tx-5": "大眾運輸月票",
+        "tx-6": "數位服務訂閱",
+        "tx-7": "里斯本住宿"
+      },
+      "axisAmount": "${count}千"
+    },
+    "travel": {
+      "eyebrow": "換個風景，換個心情",
+      "title": "旅遊",
+      "description": "把行程細節放在一起，留更多心思享受旅程。",
+      "nextTrip": "下一趟旅程",
+      "countdown": "6 天後出發・示範日期：11 月 20 日",
+      "destinationCountry": "葡萄牙・歐洲",
+      "tripDates": "2026 年 11 月 26–30 日・4 晚",
+      "tripNote": "悠閒的早晨、磁磚鋪成的街道，再到山間走走。這趟虛構的城市小旅行，正慢慢成形。",
+      "tripBudget": "旅程預算",
+      "budgetDetail": "預計總額・美元",
+      "booked": "模擬預訂金額",
+      "bookedDetail": "機票 $425＋住宿 $500（美元）",
+      "available": "剩餘預算",
+      "availableDetail": "可用於餐飲、交通與體驗",
+      "itineraryTitle": "留點空白，隨心漫遊",
+      "itineraryDescription": "11 月 26–30 日・皆為里斯本當地時間",
+      "weekdays": {
+        "thu": "週四",
+        "fri": "週五",
+        "sat": "週六",
+        "sun": "週日",
+        "mon": "週一"
+      },
+      "itinerary": {
+        "arrival": "抵達，安頓好行李",
+        "arrivalDetail": "抵達里斯本機場（LIS），再到阿爾法瑪度過悠閒的下午。",
+        "oldTown": "探索老城區",
+        "oldTownDetail": "漫步阿爾法瑪，找一間喜歡的街角咖啡館。",
+        "sintra": "辛特拉一日遊",
+        "sintraDetail": "搭火車前往山區，下午就留給隨興安排。",
+        "riverside": "沿著特茹河散步",
+        "riversideDetail": "走訪貝倫，再沿著河岸慢慢回到市區。",
+        "home": "喝杯咖啡，準備回家",
+        "homeDetail": "上午退房，預留充裕時間前往機場。"
+      },
+      "packingTitle": "輕裝出發",
+      "packingDescription": "隨身必備清單・僅於本次瀏覽保留",
+      "packed": "已打包 {count}／{total} 項",
+      "packingProgress": "行李清單完成比例",
+      "packing": {
+        "passport": "護照與旅行文件",
+        "adapter": "旅行轉接頭",
+        "headphones": "耳機",
+        "raincoat": "輕便雨衣",
+        "walkingShoes": "舒適的步行鞋"
+      },
+      "packingComplete": "必備物品都打包好了，準備迎接下一趟旅程！",
+      "stayTitle": "旅途中的暫時小窩",
+      "stayDescription": "虛構住宿資料",
+      "stayLocation": "里斯本阿爾法瑪・適合步行探索的老城區",
+      "stayDates": "11 月 26 日入住・11 月 30 日退房",
+      "stayMock": "僅為示範計畫・尚未進行任何預訂",
+      "otherTripsTitle": "之後的旅程",
+      "emptyTitle": "下一段旅程，等你安排",
+      "emptyDescription": "此示範目前沒有其他旅程。行程規劃與預訂服務整合將於 v0.1 之後再考慮。",
+      "destination": "里斯本",
+      "stayName": "阿爾法瑪小居"
+    }
+  },
+  "os": {
+    "loading": "正在載入工作空間…",
+    "errorTitle": "目前無法載入此頁面",
+    "errorDescription": "模擬資料不受影響，請再試一次。",
+    "retry": "重新載入",
+    "date": "示範日期：2026 年 11 月 20 日，星期五",
+    "greeting": "讓今天，更有條理。",
+    "intro": "把重要的事、接下來的計畫與每一步進展，整理在同一個地方。",
+    "workspace": "個人工作空間 · v0.1",
+    "briefEyebrow": "今日摘要",
+    "localDemo": "本機模擬",
+    "briefTitle": "把時間留給真正重要的事。",
+    "briefDescription": "今天還有 {remaining} 項待辦事項。11 月預算尚餘 $820 美元，距離里斯本之旅還有 6 天；再上一小段課，讓學習持續前進。",
+    "briefNote": "依據模擬資料整理，未連結任何外部帳戶。",
+    "refreshing": "正在整理本機模擬資料…",
+    "refreshed": "已根據模擬資料更新摘要，未呼叫任何 AI 服務。",
+    "refreshBrief": "更新摘要",
+    "refreshingButton": "更新中…",
+    "netWorth": "資產淨值（美元）",
+    "netWorthDetail": "現金 $12,450 ＋投資 $35,800 · 模擬餘額",
+    "focus": "今日待辦",
+    "focusDetail": "一步一步，累積有意義的進展",
+    "nextTrip": "下一趟旅程",
+    "sixDays": "6 天後",
+    "tripDate": "里斯本 · 2026 年 11 月 26–30 日",
+    "learningTime": "本週學習時間",
+    "learningValue": "2 小時 20 分",
+    "learningDetail": "已累積 140 分鐘 · 每週目標 180 分鐘",
+    "focusTitle": "今日待辦清單",
+    "taskCount": "已完成 {completed}／{total} 項",
+    "hideCompleted": "隱藏已完成項目",
+    "showCompleted": "顯示已完成項目",
+    "allDone": "待辦清空，讓思緒也休息一下。",
+    "allDoneDescription": "今天的待辦事項都完成了。可以新增目標，也可以好好享受這段空檔。",
+    "newFocus": "新增待辦事項",
+    "add": "新增",
+    "sessionOnly": "這些模擬變更只保留在此頁面，離開或重新整理後便會重設。",
+    "tasks": {
+      "budget": "檢視 11 月支出",
+      "packing": "完成里斯本行李清單",
+      "lesson": "練習 TypeScript 15 分鐘",
+      "weekly": "安排本週優先事項"
+    },
+    "categories": {
+      "finance": "財務 · 10 分鐘",
+      "travel": "旅遊 · 5 分鐘",
+      "learning": "學習 · 15 分鐘",
+      "personal": "個人事項",
+      "custom": "個人待辦"
+    },
+    "weeklyTitle": "每一分鐘，都在累積",
+    "weeklyDescription": "本週學習節奏 · 11 月 16–22 日",
+    "weeklyTotal": "本週共 140 分鐘",
+    "focusTime": "學習時間",
+    "chartData": "查看圖表資料",
+    "day": "星期",
+    "minutes": "{count} 分鐘",
+    "shortMinutes": "{count} 分",
+    "days": {
+      "mon": "週一",
+      "tue": "週二",
+      "wed": "週三",
+      "thu": "週四",
+      "fri": "週五",
+      "sat": "週六",
+      "sun": "週日"
+    },
+    "tripTitle": "即將出發",
+    "tripSubtitle": "換個風景，為生活充電。",
+    "portugal": "葡萄牙",
+    "lisbon": "里斯本",
+    "tripReady": "模擬行程已備妥 · 行李整理中",
+    "viewTrip": "查看旅遊計畫",
+    "keepLearning": "讓學習持續前進",
+    "courseSubtitle": "每天一小段，也能走得很遠。",
+    "courseTitle": "TypeScript 基礎入門",
+    "courseLesson": "接下來：型別縮窄與型別守衛",
+    "courseProgress": "已完成 {percent}%",
+    "courseDuration": "每次 15 分鐘",
+    "continueLearning": "繼續學習",
+    "privacyNote": "這是使用虛構資料的模擬工作空間。摘要與 AI 代理皆依固定的本機規則產生，不會傳送資料至 AI 服務。"
+  },
+  "osMeta": {
+    "todayTitle": "今日總覽｜個人 AI 作業系統",
+    "todayDescription": "把今日待辦、財務、旅遊、學習與 AI 代理模擬，整理在同一個個人工作空間。",
+    "financeTitle": "財務｜個人 AI 作業系統",
+    "financeDescription": "查看個人財務、預算與支出模擬資料。所有金額皆為虛構的美元數值。",
+    "travelTitle": "旅遊｜個人 AI 作業系統",
+    "travelDescription": "查看里斯本模擬行程與互動行李清單。",
+    "learningTitle": "學習｜個人 AI 作業系統",
+    "learningDescription": "透過模擬課程與學習紀錄，培養穩定的學習習慣。",
+    "agentsTitle": "AI 代理｜個人 AI 作業系統",
+    "agentsDescription": "以模擬資料體驗固定規則的本機 AI 代理流程。"
+  },
+  "osContext": {
+    "title": "我的聊天脈絡",
+    "description": "確認你在目前這段對話中提供的資訊摘要。",
+    "pendingBadge": "待確認的匯入摘要",
+    "savedBadge": "已儲存在此裝置",
+    "sessionBadge": "僅保留在此分頁",
+    "emptyTitle": "尚未匯入聊天摘要",
+    "emptyDescription": "開啟助理提供的摘要匯入連結，確認內容後，再選擇是否儲存。此功能不會自動讀取其他 ChatGPT 聊天。",
+    "invalidImport": "這個匯入連結沒有有效的摘要，或摘要內容過長。匯入內容尚未儲存，請向助理取得新的摘要連結。",
+    "discardImport": "關閉這次匯入",
+    "sourceLabel": "來源：",
+    "currentConversation": "僅限目前這段對話",
+    "asOfLabel": "摘要日期：",
+    "reviewNotice": "請先核對摘要，也可以修改資訊內容。匯入內容尚未儲存，確認後再儲存到這台裝置。",
+    "factsTitle": "你曾提供的資訊",
+    "evidenceLabel": "對話依據：",
+    "projectsTitle": "你的專案",
+    "projectNumber": "專案 {index}",
+    "projectName": "專案名稱",
+    "projectDescription": "專案說明",
+    "projectAreas": "相關領域",
+    "notProvidedTitle": "尚未提供的資訊",
+    "notProvidedDescription": "這份摘要未包含以下資訊，不會自行推測補上。",
+    "requiredFields": "請填寫每項資訊的內容，以及各專案的名稱與說明，再進行儲存。",
+    "save": "儲存到這台裝置",
+    "edit": "編輯摘要",
+    "cancel": "取消編輯",
+    "cancelImport": "取消匯入",
+    "clear": "清除此裝置的摘要",
+    "saved": "摘要已儲存在這台裝置。",
+    "sessionOnly": "瀏覽器目前無法儲存資料。摘要只會保留在此分頁，重新整理或關閉後就會消失。",
+    "cleared": "已清除此裝置的聊天脈絡。",
+    "cancelled": "已取消變更。",
+    "invalidDraft": "摘要無法儲存。請確認必填內容與字數限制後再試一次。",
+    "privacyFooter": "聊天脈絡僅儲存在這台裝置的目前瀏覽器，不會同步到你的帳戶，也不包含其他 ChatGPT 聊天。",
+    "clearFailed": "目前畫面已清空，但瀏覽器阻擋了已儲存摘要的刪除。重新整理後資料可能再次出現，請在儲存權限恢復後再次清除。",
+    "savedInvalid": "這個瀏覽器先前儲存的摘要無效，因此未載入。請先清除此裝置的摘要，再重新匯入有效的摘要。"
+  }
+}

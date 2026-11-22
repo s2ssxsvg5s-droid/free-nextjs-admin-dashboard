@@ -1,8 +1,10 @@
+> This is the private static hosting copy, displayed in Traditional Chinese (zh-TW). See [hosting configuration](docs/HOSTING.md) for the static route adapter and build commands. [PR #2](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/2) tracks the hosted source; [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) contains the original MVP.
+
 # Personal AI OS — MVP v0.1
 
 A mobile-first personal dashboard for Today, Finance, Travel, Learning, and AI Agents. Built with TypeScript, Next.js App Router, and Tailwind CSS on the actual [TailAdmin Free Next.js repository](https://github.com/TailAdmin/free-nextjs-admin-dashboard).
 
-**This is a mock workspace.** Every balance, transaction, itinerary, learning record, and agent result is fictional. The sample date is **November 20, 2026**. There are no account connections, financial credentials, API keys, trading operations, booking operations, or live AI calls. No environment variables are needed to run the app.
+**All financial, travel, learning and agent records are demonstrations.** Every balance, transaction, itinerary, learning record, and agent result is fictional. The sample date is **November 20, 2026**. An optional conversation summary is supplied and reviewed separately by the owner. There are no account connections, financial credentials, API keys, trading operations, booking operations, or live AI calls. No environment variables are needed to run the app.
 
 ## Run locally
 
@@ -10,15 +12,17 @@ Use **Node.js 22.18+ or Node.js 24** with npm. Next.js itself supports Node 20.9
 
 ```bash
 npm ci
-npm run dev
+npm run dev:next
 ```
 
-Open <http://localhost:3000>. For a production build and local preview:
+Open <http://localhost:3000>. For a production static build and local preview:
 
 ```bash
 npm run build
 npm start
 ```
+
+`npm run dev` also serves the existing static export; run `npm run build` before using it on a fresh checkout.
 
 Install the locked dependencies with `npm ci`; keep `package-lock.json` in source control. The MVP adds no application dependencies. The system font stack avoids a build-time Google Fonts download and external font requests.
 
@@ -34,14 +38,20 @@ Install the locked dependencies with `npm ci`; keep `package-lock.json` in sourc
 
 The shell includes responsive navigation, an accessible mobile drawer, a skip link, and a persistent light/dark theme. Cards and loading/empty states are reusable. Charts load on the client and include accessible data alternatives.
 
-Focus items, packing, learning sessions, and agent jobs live in component state. They reset when their page is unmounted or reloaded; Today remains a fixture-based overview rather than a synchronized datastore. Only the theme preference persists in local storage. Denied browser storage does not prevent theme switching.
+Focus items, packing, learning sessions, and agent jobs live in component state. They reset when their page is unmounted or reloaded; Today remains a fixture-based overview rather than a synchronized datastore. The theme preference persists in local storage. A personal conversation summary is saved in this browser only after an explicit save click; it has its own clear control. It is not synchronized to a ChatGPT account or other devices. Denied browser storage does not prevent theme switching.
+
+## Conversation context import
+
+The Today page includes a manual, reviewable conversation-summary import. An assistant-provided link carries a bounded, schema-validated snapshot in its URL fragment. The browser previews it without automatically saving. The owner can edit the fields, explicitly save to this device, cancel the import, or clear device storage. The fragment is removed on save/cancel. The packet is not encrypted; treat a copied import link as containing its summary. Denied storage produces a session-only state, and failed deletion is reported accurately.
+
+The feature cannot read other ChatGPT conversations or access ChatGPT memory automatically. Real facts are not baked into the exported HTML, translation files, Git source, or server configuration. The importer and tests contain only generic schemas and fictional fixtures. Finance, travel, learning history and AI agents remain labeled demonstrations until actual data is supplied separately.
 
 ## Architecture
 
 ```text
 src/
-├── app/[locale]/
-│   ├── layout.tsx                 # locale validation, providers, viewport
+├── app/
+│   ├── layout.tsx                 # zh-TW locale, providers, viewport
 │   └── (admin)/
 │       ├── layout.tsx             # shared dashboard shell
 │       ├── page.tsx               # Today
@@ -55,6 +65,7 @@ src/
 │   ├── personal-os/
 │   │   ├── shared/                # headings, cards, loading and empty states
 │   │   ├── today/
+│   │   ├── personal-context/      # validated import, review UI, device storage
 │   │   ├── finance/               # fixtures, chart, transactions
 │   │   ├── travel/                # itinerary and packing
 │   │   ├── learning/              # courses and session journal
@@ -62,14 +73,14 @@ src/
 │   └── ui/                        # inherited TailAdmin/Base UI primitives
 ├── context/theme-context.tsx
 ├── layout/app-layout/             # header and sidebar/navigation data
-├── i18n/                          # next-intl routing; English only
-├── messages/en.json               # existing and MVP translation namespaces
+├── i18n/                          # next-intl; deployed default is zh-TW
+├── messages/{en,zh-TW}.json        # matching MVP translation namespaces
 └── app/globals.css                # Tailwind v4 tokens and shared styles
 ```
 
 Pages remain App Router server components with metadata and locale initialization. Interactive widgets use client components. ApexCharts is imported dynamically with SSR disabled. Typed fixtures and widget parts sit beside each feature rather than in page files. Existing TailAdmin UI components, theme tokens, and locale-aware navigation are reused.
 
-English is the only enabled locale in this Free checkout, with unprefixed URLs. New UI copy uses the `os`, `osShell`, `osSections`, `osLearning`, and `osAgents` message namespaces. Additional languages require message files and routing configuration together.
+This hosting copy fixes the request locale to Traditional Chinese, with unprefixed URLs; the English catalog is retained. Dashboard copy uses the `os`, `osShell`, `osSections`, `osLearning`, `osAgents`, `osMeta`, and `osContext` namespaces. Further language switching requires message files, routing configuration and compatible static output together.
 
 Original TailAdmin demo routes remain in the source for reference but are not linked from the MVP navigation. These include chart/UI demos, profile/calendar/forms, and sign-in/sign-up examples. Authentication examples are visual mock forms only: do not enter real credentials. The MVP has no authentication service or provider API routes.
 
@@ -82,7 +93,7 @@ npm test
 npm run build
 ```
 
-`npm test` runs Node fixture checks that reconcile the mock budget, validate demo records, and verify MIT attribution. `npm run typecheck` checks the complete TypeScript project. Build and lint include retained upstream code.
+`npm test` runs Node checks for mock-budget reconciliation, demo records, MIT attribution, bilingual message parity, bounded context parsing and device-storage behavior. The context tests cover explicit saving, cancellation, denied storage and retrying failed deletion. `npm run typecheck` checks the complete TypeScript project. Build and lint include retained upstream code.
 
 Browser tests run against an already running local server:
 
@@ -127,4 +138,4 @@ The audited foundation is TailAdmin Free v2.5.2 at commit **`8075866c23d1841508e
 
 The original [MIT License](LICENSE), including **Copyright (c) 2023 TailAdmin**, is preserved unchanged. Keep this license and copyright/permission notices with copies or substantial portions of the code. Third-party dependencies retain their own licenses. Upstream documentation is available at <https://tailadmin.com/docs>.
 
-Development branch: `feat/personal-ai-os-v0.1`. Review: [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) in your TailAdmin fork. See [the PR summary](docs/PR_SUMMARY.md) for review scope and verification. Do not merge or deploy this work without approval.
+Original development branch: `feat/personal-ai-os-v0.1`; its [PR #1](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/1) was merged outside this deployment workflow. The hosted source is on `deploy/personal-ai-os-v0.1`, reviewed in [PR #2](https://github.com/s2ssxsvg5s-droid/free-nextjs-admin-dashboard/pull/2). Website updates were authorized by the owner. Do not merge the hosting PR without approval.

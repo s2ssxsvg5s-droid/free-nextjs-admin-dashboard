@@ -6,7 +6,9 @@
 
 @theme {
   --font-*: initial;
-  --font-outfit: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --font-outfit:
+    "PingFang TC", "Microsoft JhengHei", "Avenir Next", "Segoe UI", Arial,
+    sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-2xsm: 375px;
@@ -134,7 +136,9 @@
     scroll-padding-top: 6rem;
   }
 
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     font-size: max(1rem, 16px);
   }
 
@@ -145,7 +149,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

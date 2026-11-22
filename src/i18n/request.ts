@@ -1,15 +1,5 @@
 import { getRequestConfig } from "next-intl/server";
+import messages from "@/messages/zh-TW.json";
 
-import { type Locale, routing } from "./routing";
-
-export default getRequestConfig(async ({ requestLocale }) => {
-  const requested = await requestLocale;
-  const locale = routing.locales.includes(requested as Locale)
-    ? (requested as Locale)
-    : routing.defaultLocale;
-
-  return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
-  };
-});
+// The published MVP is Traditional Chinese and needs no request-time locale routing.
+export default getRequestConfig(async () => ({ locale: "zh-TW", messages }));
